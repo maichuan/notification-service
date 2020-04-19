@@ -23,8 +23,7 @@ export const handlePushOnOrderComplete = async ({
   }
 
   try {
-    const receipts = await expo.sendPushNotificationsAsync([notification])
-    console.log(receipts)
+    await expo.sendPushNotificationsAsync([notification])
     return true
   } catch (error) {
     console.error(error)
@@ -55,7 +54,6 @@ export const handlePushOnOrderComplete = async ({
 //   chunks.map(async chunk => {
 //     try {
 //       const receipts = await expo.sendPushNotificationsAsync(chunk)
-//       console.log(receipts)
 //     } catch (error) {
 //       console.error(error)
 //     }
