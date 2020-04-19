@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(morgan('dev'))
 app.use(express.json())
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (_: Request, res: Response) => {
   res.send('Push Notification Server Running')
 })
 
