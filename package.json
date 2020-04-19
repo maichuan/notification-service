@@ -1,0 +1,33 @@
+{
+  "name": "notification-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon dist/index.js",
+    "build": "tsc",
+    "dev": "nodemon src/index.ts --exec ts-node",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint --project ."
+  },
+  "keywords": [],
+  "author": "kelner",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/morgan": "^1.7.37",
+    "husky": "^4.2.5",
+    "lint-staged": "^9.4.2",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4",
+    "typescript-tslint-plugin": "^0.5.4"
+  },
+  "dependencies": {
+    "expo-server-sdk": "^3.5.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
